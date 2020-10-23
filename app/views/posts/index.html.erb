@@ -1,0 +1,36 @@
+<%= render "shared/header" %>
+<div class='main'>
+
+  <%# 画像一覧 %>
+  <div class='post-contents'>
+    <ul class='post-lists'>
+      <%# 画像一覧 %>
+      <%#= render "shared/index", posts: @posts, favorites: @favorites %>
+      <%= render "shared/index", posts: @posts %>
+      <%# /画像一覧 %>
+      <%# 画像がない場合のダミー %>
+      <% if @posts.where('id >= 1').blank? %>
+        <li class='list'>
+          <div class='post-img-content'>
+            <%= link_to new_post_path do %>
+            <%= image_tag "white_image.jpg", class: "post-img" %>
+            <div class='post-info'>
+              <h3 class='post-name'>
+                sample
+              </h3>
+              </div>
+            </div>
+            <% end %>
+          </div>
+        </li>
+      <% end %>
+      <%# //画像がない場合のダミー %>
+    </ul>
+  </div>
+  <%# //画像一覧 %>
+</div>
+<div class='purchase-btn'>
+  <span class='purchase-btn-text'>出品する</span>
+  <%= link_to image_tag('camera.png' , size: '185x50' ,class: "purchase-btn-icon"), new_post_path %>
+</div>
+<%= render "shared/footer" %>

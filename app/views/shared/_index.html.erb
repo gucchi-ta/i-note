@@ -1,0 +1,14 @@
+<% posts.each do |post| %>
+  <li class='list'>
+    <div class='post-img-content'>
+      <%= link_to post_path(post.id) do %>
+        <%= image_tag post.image, class: "post-img" %>
+      <% end %>
+    </div>
+    <div class='post-info'>
+      <h3 class='post-name'>
+        <%= post.img_name %>
+      </h3>
+    </div>
+  </li>
+<% end %>
