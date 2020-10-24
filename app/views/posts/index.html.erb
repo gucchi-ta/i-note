@@ -13,13 +13,7 @@
         <li class='list'>
           <div class='post-img-content'>
             <%= link_to new_post_path do %>
-            <%= image_tag "white_image.jpg", class: "post-img" %>
-            <div class='post-info'>
-              <h3 class='post-name'>
-                sample
-              </h3>
-              </div>
-            </div>
+              <%= image_tag "white_image.jpg", class: "post-img" %>
             <% end %>
           </div>
         </li>
@@ -29,8 +23,3 @@
   </div>
   <%# //画像一覧 %>
 </div>
-<div class='purchase-btn'>
-  <span class='purchase-btn-text'>出品する</span>
-  <%= link_to image_tag('camera.png' , size: '185x50' ,class: "purchase-btn-icon"), new_post_path %>
-</div>
-<%= render "shared/footer" %>
