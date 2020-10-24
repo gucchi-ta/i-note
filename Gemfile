@@ -77,3 +77,8 @@ gem 'font-awesome-rails'
 
 #rubocopを使うため
 gem 'rubocop', require: false
+
+# Heroku用のGemを導入
+group :production do
+  gem 'rails_12factor'
+end
