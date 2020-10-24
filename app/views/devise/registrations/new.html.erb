@@ -7,10 +7,6 @@
     </h1>
   </div>
 
-  <%# エラー発生時にメッセージを表示 %>
-  <%#= render 'shared/error_messages', model: f.object %>
-  <%# /エラー発生時にメッセージを表示 %>
-
   <div class="form-group">
     <%= f.text_field :nickname, class:"input-default", id:"nickname", placeholder:"ニックネーム", maxlength:"40" %>
     <% if @user.errors.include?(:nickname) %>

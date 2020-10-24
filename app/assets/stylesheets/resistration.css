@@ -45,7 +45,6 @@
   flex-direction: column;
   margin: 0 auto;
   padding: 5px 0;
-  /* border-top: 1px solid #f5f5f5; */
 }
 
 .form-group:first-child {
@@ -98,6 +97,7 @@
   border: 1px solid #ccc;
   background: #fff;
   cursor: pointer;
+  font-size: 14px;
 }
 
 .input-birth-wrap>p {
@@ -134,8 +134,6 @@
 
 .register-red-btn {
   width: 100%;
-  /* background: #ea352d;
-  border: 1px solid #ea352d; */
   background: red;
   border: 1px solid red;
   color: #fff;
