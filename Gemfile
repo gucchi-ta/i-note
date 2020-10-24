@@ -74,3 +74,6 @@ gem 'jquery-rails'
 
 #Font Awesome使うため
 gem 'font-awesome-rails'
+
+#rubocopを使うため
+gem 'rubocop', require: false
