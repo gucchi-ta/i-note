@@ -127,6 +127,11 @@
   cursor: pointer;
 }
 
+.form-bottom-text>a {
+  color: #0099e8;
+  text-decoration: none;
+}
+
 .register-btn {
   width: 50%;
   margin: 0 auto;
