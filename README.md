@@ -52,8 +52,7 @@ Things you may want to cover:
 | Column              | Type       | Options                       |
 | ------------------- | ---------- | ----------------------------- |
 | image               | string     | null:false                    |
-| img_name           | string     | null:false                    |
-| text                | text       | null:false                    |
+| memo                | text       | null:false                    |
 | user                | references | null:false, foreign_key: true |
 
 ### association
