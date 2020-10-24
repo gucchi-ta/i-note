@@ -12,6 +12,6 @@ class User < ApplicationRecord
     validates :nickname, :birthday, presence: true
     # passwordのバリデーション
     PASSWORD_REGEX = /\A(?=.*?[a-z])(?=.*?[\d])[a-z\d]+\z/i.freeze
-    validates :password, format: { with: PASSWORD_REGEX }, length: { minimum: 6 }
+    validates :password, format: { with: PASSWORD_REGEX }, length: { minimum: 8, maximum: 20}
   # /バリデーション
 end
