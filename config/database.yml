@@ -20,14 +20,14 @@ default: &default
 
 development:
   <<: *default
-  database: origin_1_app_development
+  database: i-note_development
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: origin_1_app_test
+  database: i-note_test
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -50,6 +50,6 @@ test:
 #
 production:
   <<: *default
-  database: origin_1_app_production
-  username: origin_1_app
-  password: <%= ENV['ORIGIN_1_APP_DATABASE_PASSWORD'] %>
+  database: i-note_production
+  username: i-note
+  password: <%= ENV['i-note_DATABASE_PASSWORD'] %>
