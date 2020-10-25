@@ -13,6 +13,8 @@
   position: fixed;
   top: 0px;
   left: 0px;
+  background-color: white;
+  z-index: 1;
 }
 /* /ヘッダー全て */
 
