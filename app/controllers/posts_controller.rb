@@ -29,5 +29,4 @@ class PostsController < ApplicationController
   def post_params
     params.require(:post).permit(:memo, :image).merge(user_id: current_user.id)
   end
-
 end
