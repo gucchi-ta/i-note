@@ -13,6 +13,8 @@
   position: fixed;
   top: 0px;
   left: 0px;
+  background-color: white;
+  z-index: 1;
 }
 /* /ヘッダー全て */
 
@@ -81,7 +83,7 @@
   justify-content: flex-end;
   flex-wrap: wrap;
   /* width: 300px; */
-  margin-left: 3vw;
+  margin-left: 1vw;
 }
 
 .lists-left {
@@ -130,6 +132,10 @@
 
 .sign-up {
   margin-left: 0.5vw;
+}
+
+.upload-icon{
+  padding: 5px;
 }
 
 .devise_icon{

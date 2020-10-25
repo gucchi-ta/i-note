@@ -1,11 +1,16 @@
 <header class='top-page-header'>
   <%= link_to image_tag("inote_logo.png", class:"inote-icon"), "/" %>
   <div class='search-bar-contents'>
-    <%= form_with(url: '#', local: true, method: :get, class: "search-form") do |form| %>
+    <%= form_with url: '#', local: true, method: :get, class: "search-form" do |form| %>
       <%= form.text_field :keyword, placeholder: "検索する", class: "input-box" %>
       <button class="search-button">
         <%= image_tag "search_icon.png", class:"search-icon" %>
       </button>
+    <% end %>
+  </div>
+  <div>
+    <% if user_signed_in? %>
+      <%= link_to image_tag('upload_icon_2.png', class: "devise_icon"), new_post_path %>
     <% end %>
   </div>
   <div class='nav'>
